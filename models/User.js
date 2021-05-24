@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 const dateFormat = require("../utils/dateFormat");
 
-const UserSchema = new Schema(
+const userSchema = new Schema(
   {
     //username: string unique required trimmed
     username: {
@@ -47,10 +47,10 @@ const UserSchema = new Schema(
 );
 
 // get total count of friends on retrieval
-UserSchema.virtual('friendCount').get(function() {
+userSchema.virtual('friendCount').get(function() {
     return this.friends.length;
   });
 
-const User = model('User', UserSchema);
+const User = model('User', userSchema);
 
 module.exports = User;
