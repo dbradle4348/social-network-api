@@ -20,6 +20,9 @@
   ## Usage
   npm start and use Insomnia for testing purposes
   
+  Walkthrough:
+  https://www.youtube.com/watch?v=tX1QgtM0Jwo
+  
   ## Questions
 
   Please contact me using the information below for any questions:
